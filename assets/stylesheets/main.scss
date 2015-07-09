@@ -1,0 +1,12 @@
+@import 'variables';
+@import 'navbar';
+@import 'map';
+@import 'controlpanel';
+
+body {
+	font-family: 'Varela Round';
+}
+
+.main-area {
+	margin-top: $navbar-height;
+}

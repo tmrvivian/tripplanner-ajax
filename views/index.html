@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+
+{% block title %}Your Trip{% endblock %}
+
+{% block content %}
+	<section>
+		<div class="clearfix main-area">
+			<main class="map-container col-md-8 col-lg-9">
+				{% include 'map.html' %}
+			</main>
+			<aside class="controlpanel-container col-md-4 col-lg-3">
+				{% include 'controlpanel.html' %}
+			</aside>
+		</div>
+	</section>
+{% endblock %}

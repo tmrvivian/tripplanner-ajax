@@ -1,0 +1,87 @@
+
+.controlpanel-container {
+	
+	background-color: $light-brown;
+	height: calc(100vh - #{$navbar-height});
+	overflow-y: scroll;
+  overflow-x: hidden;
+  padding: 18px 0px 0px 0px;
+  border-left: 1px solid rgba(0,0,0,0.1);
+  border-right: 1px solid rgba(0,0,0,0.1);
+
+  .panel-body {
+  	background-color: $lighter-brown;
+  }
+
+  .panel-heading {
+  	background-color: $dark-brown;
+  }
+
+  .panel-default {
+  	border: 0;
+  	border-radius: 10px;
+  	overflow: hidden;
+  }
+
+  select {
+  	width: 88%;
+  }
+
+  select + button {
+  	border-radius: 50%;
+  	background-color: rgba(72,150,191,1);
+  	border: 0;
+  	height: 20px;
+  	width: 20px;
+  }
+
+  h3 {
+  	text-align: center;
+
+  	.day-title {
+  		color: $dark-brown;
+	  	border: 1px solid $dark-brown;
+	  	padding: 4px 8px;
+	  	border-radius: 8px;
+	  	margin-bottom: 12px;
+	  	display: inline-block;
+  	}
+  }
+
+  h4 {
+  	color: $text-gray;
+  }
+
+  .itinerary-item {
+		overflow: hidden;
+		margin-bottom: 10px;
+	}
+
+	.remove button {
+		border-radius: 50%;
+  	background-color: rgba(218,29,48,1);
+  	border: 0;
+  	height: 20px;
+  	width: 20px;
+	}
+
+	.day-buttons {
+		button {
+			background-color: transparent;
+			border: 2px solid $light-blue;
+			color: $light-blue;
+			border-radius: 50%;
+			height: 30px;
+		  width: 30px;
+		  text-align: center;
+		  padding: 4px;
+		  margin-right: 4px;
+		  
+			&.current-day {
+				background-color: $light-blue;
+				color: $dark-brown;
+			}
+		}
+	}
+
+}

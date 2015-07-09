@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<title>Trip Planner - {% block title %}{% endblock %}</title>
+	<head>
+		<link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="/stylesheets/main.css" />
+		<link href='//fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet'>
+	</head>
+	<body>
+
+		{% include 'templates.html' %}
+		{% include 'navbar.html' %}
+		{% block content %}
+		{% endblock %}
+
+		<script src="/bower_components/jquery/dist/jquery.min.js"></script>
+		<script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDWyXHHy8qH905qHsrPgPWfdfws8r7aV1U&sensor=true" ></script>
+
+		<script>
+
+			{% autoescape false %}			
+				var data = {
+					hotels: {{ all_hotels | json }},
+					restaurants: {{ all_restaurants | json }},
+					thingsToDo: {{ all_things_to_do | json }},
+				};
+			{% endautoescape %}
+			
+		</script>
+
+		<script src="/js/model.js"></script>
+		<script src="/js/templates.js"></script>
+		<script src="/js/map.js"></script>
+		<script src="/js/itinerary.js"></script>
+		<script src="/js/days.js"></script>
+		<script src="/js/app.js"></script>
+
+	</body>
+</html>

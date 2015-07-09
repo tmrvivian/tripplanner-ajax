@@ -1,0 +1,15 @@
+
+.map-container {
+
+	padding: 0px;
+
+	#map-canvas {
+		height: calc(100vh - #{$navbar-height});
+    background-color: #AECCFF;
+    background-image: url('/images/spinner.gif');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+	}
+
+}
+

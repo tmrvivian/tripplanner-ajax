@@ -1,0 +1,87 @@
+.navbar.navbar-inverse {
+  background-color: #6e5b4d; }
+  .navbar.navbar-inverse .navbar-nav > li > a {
+    color: #a8c9dd;
+    font-size: 13px; }
+  .navbar.navbar-inverse .navbar-brand {
+    color: #a8c9dd;
+    padding-top: 14px;
+    font-size: 16px; }
+  .navbar.navbar-inverse .navbar-nav > .active > a,
+  .navbar.navbar-inverse .navbar-nav > .active > a:focus,
+  .navbar.navbar-inverse .navbar-nav > .active > a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5) inset; }
+
+.map-container {
+  padding: 0px; }
+  .map-container #map-canvas {
+    height: calc(100vh - 51px);
+    background-color: #AECCFF;
+    background-image: url("/images/spinner.gif");
+    background-repeat: no-repeat;
+    background-position: 50% 50%; }
+
+.controlpanel-container {
+  background-color: #bdafa5;
+  height: calc(100vh - 51px);
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding: 18px 0px 0px 0px;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  border-right: 1px solid rgba(0, 0, 0, 0.1); }
+  .controlpanel-container .panel-body {
+    background-color: #ece8e6; }
+  .controlpanel-container .panel-heading {
+    background-color: #6e5b4d; }
+  .controlpanel-container .panel-default {
+    border: 0;
+    border-radius: 10px;
+    overflow: hidden; }
+  .controlpanel-container select {
+    width: 88%; }
+  .controlpanel-container select + button {
+    border-radius: 50%;
+    background-color: #4896bf;
+    border: 0;
+    height: 20px;
+    width: 20px; }
+  .controlpanel-container h3 {
+    text-align: center; }
+    .controlpanel-container h3 .day-title {
+      color: #6e5b4d;
+      border: 1px solid #6e5b4d;
+      padding: 4px 8px;
+      border-radius: 8px;
+      margin-bottom: 12px;
+      display: inline-block; }
+  .controlpanel-container h4 {
+    color: #a3a3a3; }
+  .controlpanel-container .itinerary-item {
+    overflow: hidden;
+    margin-bottom: 10px; }
+  .controlpanel-container .remove button {
+    border-radius: 50%;
+    background-color: #da1d30;
+    border: 0;
+    height: 20px;
+    width: 20px; }
+  .controlpanel-container .day-buttons button {
+    background-color: transparent;
+    border: 2px solid #a8c9dd;
+    color: #a8c9dd;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    padding: 4px;
+    margin-right: 4px; }
+    .controlpanel-container .day-buttons button.current-day {
+      background-color: #a8c9dd;
+      color: #6e5b4d; }
+
+body {
+  font-family: 'Varela Round'; }
+
+.main-area {
+  margin-top: 51px; }

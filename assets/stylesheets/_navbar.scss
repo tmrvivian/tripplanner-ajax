@@ -1,0 +1,27 @@
+
+.navbar {
+
+	&.navbar-inverse {
+		background-color: $dark-brown;
+
+		.navbar-nav > li > a {
+			color: $light-blue;
+			font-size: 13px;
+		}
+
+		.navbar-brand {
+		  color: $light-blue;
+		  padding-top: 14px;
+  		font-size: 16px;
+		}
+
+		.navbar-nav > .active > a, 
+		.navbar-nav > .active > a:focus, 
+		.navbar-nav > .active > a:hover {
+		  background-color: rgba(0,0,0,0.1);
+  		box-shadow: 0px 0px 8px rgba(0,0,0,0.5) inset;
+		}
+
+	}
+
+}
